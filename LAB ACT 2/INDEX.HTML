@@ -69,22 +69,6 @@
             font-size: 1.5rem;
             margin-bottom: 30px;
         }
-        .cta-buttons {
-            display: flex;
-            gap: 20px;
-        }
-        .cta-button {
-            background: #ff6600;
-            color: white;
-            padding: 15px 40px;
-            text-decoration: none;
-            font-size: 20px;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-        .cta-button:hover {
-            background: #cc5500;
-        }
         .container {
             max-width: 1200px;
             margin: 120px auto 40px;
@@ -149,25 +133,39 @@
         .contact-form button:hover {
             background: #cc5500;
         }
+        h2 {
+            color: white;
+        }
     </style>
 </head>
 <body>
     <div class="header">
         <img src="IMAGES/LG.png" alt="Shoe Store Logo" class="logo">
         <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
             <a href="#shoes">Shoes</a>
             <a href="#contact">Contact</a>
         </nav>
     </div>
-    <div class="hero">
+    <div class="hero" id="home">
         <h1>Step Into Style</h1>
         <p>Find the perfect pair for every occasion.</p>
+    </div>
+    <div class="container" id="about">
+        <h2>About Us</h2>
+        <p>We provide the latest and trendiest shoes to keep you stylish and comfortable.</p>
+    </div>
+    <div class="container" id="services">
+        <h2>Our Services</h2>
+        <p>We offer high-quality shoes, fast shipping, and great customer service.</p>
     </div>
     <div class="container" id="shoes">
         <h2>Our Collection</h2>
         <div class="shoe-section">
             <div class="shoe">
-                <img src="IMAGES/shoe1.jfif" alt="Shoe 1">
+                <img src="IMAGES/shoe1.jpg" alt="Shoe 1">
                 <h3>Sport Sneakers</h3>
                 <p>$50.00</p>
             </div>
