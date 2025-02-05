@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fictional Business</title>
+    <title>Shoe Store</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -13,11 +13,10 @@
             font-family: 'Raleway', sans-serif;
         }
         body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            background-color: #ffffff;
+            color: #333;
             text-align: center;
-            background-color: #17202b ;
+            font-size: 16px;
         }
         .header {
             width: 100%;
@@ -25,38 +24,45 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px 50px;
-            background: #ffffff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background: #000;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
         .logo {
-            max-width: 150px;
+            max-width: 120px;
         }
         .nav {
             display: flex;
-            gap: 20px;
+            gap: 30px;
         }
         .nav a {
             text-decoration: none;
-            color: #333;
-            font-weight: 500;
-            font-size: 16px;
+            color: white;
+            font-weight: 600;
+            font-size: 18px;
             transition: color 0.3s;
         }
         .nav a:hover {
             color: #ff6600;
         }
         .hero {
-            background: url() center/cover no-repeat;
+            background: url('your-image.jpg') center/cover no-repeat;
             height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             color: white;
-            flex-direction: column;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            padding: 100px 20px;
         }
         .hero h1 {
-            font-size: 3rem;
+            font-size: 4rem;
+            font-weight: bold;
             margin-bottom: 20px;
         }
         .hero p {
@@ -70,83 +76,121 @@
         .cta-button {
             background: #ff6600;
             color: white;
-            padding: 15px 30px;
+            padding: 15px 40px;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 20px;
             border-radius: 5px;
             transition: background 0.3s;
         }
         .cta-button:hover {
             background: #cc5500;
         }
-        .signup-button {
-            background: #ffffff;
-            color: #ff6600;
-            border: 2px solid #ff6600;
+        .container {
+            max-width: 1200px;
+            margin: 120px auto 40px;
+            padding: 20px;
+            text-align: left;
         }
-        .signup-button:hover {
+        .shoe-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 50px 0;
+        }
+        .shoe {
+            background: #f8f8f8;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .shoe:hover {
+            transform: translateY(-10px);
+        }
+        .shoe img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .shoe h3 {
+            margin: 15px 0;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .shoe p {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ff6600;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            margin: auto;
+            padding: 50px;
+            background: #f8f8f8;
+            border-radius: 10px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
             background: #ff6600;
             color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
         }
-        .container {
-            max-width: 1100px;
-            margin: 20px;
-            display: grid;
-            gap: 20px;
-        }
-        .section {
-            padding: 40px;
-            background: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        @media (max-width: 768px) {
-            .hero {
-                height: 60vh;
-            }
-            .hero h1 {
-                font-size: 2rem;
-            }
-            .hero p {
-                font-size: 1rem;
-            }
-            .cta-buttons {
-                flex-direction: column;
-                gap: 10px;
-            }
+        .contact-form button:hover {
+            background: #cc5500;
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <img src="IMAGES/LG.png" alt="Business Logo" class="logo">
+        <img src="IMAGES/LG.png" alt="Shoe Store Logo" class="logo">
         <nav class="nav">
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
+            <a href="#shoes">Shoes</a>
             <a href="#contact">Contact</a>
         </nav>
     </div>
     <div class="hero">
-        <h1>HEHE</h1>
-        <p>Our platform empowers you to succeed with top-notch services and tools.</p>
-        <div class="cta-buttons">
-            <a href="#contact" class="cta-button">Get Started</a>
-            <a href="#signup" class="cta-button signup-button">Sign Up</a>
+        <h1>Step Into Style</h1>
+        <p>Find the perfect pair for every occasion.</p>
+    </div>
+    <div class="container" id="shoes">
+        <h2>Our Collection</h2>
+        <div class="shoe-section">
+            <div class="shoe">
+                <img src="IMAGES/shoe1.jfif" alt="Shoe 1">
+                <h3>Sport Sneakers</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="shoe">
+                <img src="IMAGES/shoe2.jpg" alt="Shoe 2">
+                <h3>Casual Shoes</h3>
+                <p>$45.00</p>
+            </div>
+            <div class="shoe">
+                <img src="IMAGES/shoe3.jpg" alt="Shoe 3">
+                <h3>Formal Shoes</h3>
+                <p>$70.00</p>
+            </div>
         </div>
     </div>
-    <div class="container">
-        <div class="section" id="about">
-            <h2>About Us</h2>
-            <p>We provide top-notch services to help your business grow.</p>
-        </div>
-        <div class="section" id="services">
-            <h2>Our Services</h2>
-            <p>From marketing to consulting, we offer a range of services tailored to your needs.</p>
-        </div>
-        <div class="section" id="contact">
-            <h2>Contact Us</h2>
-            <p>Email: contact@business.com | Phone: 123-456-7890</p>
-        </div>
+    <div class="container" id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </div>
 </body>
 </html>
