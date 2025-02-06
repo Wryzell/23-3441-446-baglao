@@ -18,7 +18,7 @@ img {
     height: auto;
 }
 
-/* Header */
+
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -65,7 +65,7 @@ img {
     align-items: center;
     text-align: center;
     color: #fff; 
-    padding: 0 0px;
+    padding: 0 20px;
 }
 
 .hero-section h1 {
@@ -79,7 +79,7 @@ img {
 
 .about {
     padding: 50px 20px;
-    background: #000; /* Black background */
+    background: #000; 
     text-align: center;
 }
 
@@ -94,10 +94,10 @@ img {
     line-height: 1.6;
 }
 
-/* Services Section */
+
 .services {
     padding: 50px 20px;
-    background: #000; /* Black background */
+    background: #000; 
     text-align: center;
 }
 
@@ -125,10 +125,10 @@ img {
     color: #ffffff;
 }
 
-/* Shoes Section */
+
 .shoes {
     padding: 50px 20px;
-    background: #000; /* Black background */
+    background: #000; 
     text-align: center;
 }
 
@@ -145,10 +145,10 @@ img {
     max-width: 300px;
 }
 
-/* Contact Section */
+
 .contact {
     padding: 50px 20px;
-    background: #000; /* Black background */
+    background: #000; 
     text-align: center;
 }
 
@@ -170,7 +170,7 @@ img {
 
 .contact button {
     background-color: rgb(255, 255, 255);
-    color: rgb(156, 156, 156);
+    color: rgb(0, 0, 0);
     padding: 15px;
     border: none;
     border-radius: 5px;
@@ -183,7 +183,7 @@ img {
     background-color: Zrgb(0, 0, 0);
 }
 
-/* Footer */
+
 .footer {
     background: #ffffff;
     color: rgb(0, 0, 0);
@@ -191,7 +191,7 @@ img {
     padding: 20px;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .hero-section h1 {
         font-size: 2rem;
