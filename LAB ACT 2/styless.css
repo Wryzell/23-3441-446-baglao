@@ -1,11 +1,11 @@
-/* General Styles */
+
 body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    color: #fff; /* All text is white */
-    background: #000; /* All background is black */
+    color: #fff; 
+    background: #000; 
 }
 
 a {
@@ -23,8 +23,8 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    background-color: white; /* Header stays white */
+    padding: 10px 60px;
+    background-color: rgb(248, 248, 248); 
     border-bottom: 2px solid #ccc;
     position: sticky;
     top: 0;
@@ -53,19 +53,19 @@ img {
     color: #f06;
 }
 
-/* Hero Section */
+
 .hero-section {
     background-image: url(IMAGES/LG.png);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 110vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #fff; /* White text */
-    padding: 0 20px;
+    color: #fff; 
+    padding: 0 0px;
 }
 
 .hero-section h1 {
@@ -76,7 +76,7 @@ img {
     font-size: 1.2rem;
 }
 
-/* About Section */
+
 .about {
     padding: 50px 20px;
     background: #000; /* Black background */
