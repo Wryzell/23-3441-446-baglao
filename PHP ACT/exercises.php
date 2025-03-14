@@ -69,6 +69,7 @@ function square($number) {
     return $number * $number;
 }
 
+
 echo "<b>Greeting Function:</b> " . greet("John") . "<br>";
 echo "<b>Square Function:</b> The square of 4 is: " . square(4) . "<br><br>";
 
@@ -89,3 +90,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </form>';
 }
 ?>
+
