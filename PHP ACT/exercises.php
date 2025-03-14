@@ -58,6 +58,7 @@ for ($i = 0; $i < 10; $i++) {
 }
 echo "<br>";
 
+
 echo "<h2>Exercise 4: Functions</h2>";
 
 function greet($name) {
